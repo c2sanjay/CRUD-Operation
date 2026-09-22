@@ -1,0 +1,18 @@
+{
+  "name": "mern-shopping-cart",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN stack CRUD shopping cart example",
+  "scripts": {
+    "server": "cd backend && npm run dev",
+    "server:start": "cd backend && npm start",
+    "client": "cd frontend && npm run dev",
+    "client:build": "cd frontend && npm run build",
+    "client:preview": "cd frontend && npm run preview",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
+
