@@ -7,6 +7,7 @@ const productsRouter = require("./routes/products");
 const cartRouter = require("./routes/cart");
 const uploadsRouter = require("./routes/uploads");
 const loanRouter = require("./routes/loan.routes");
+const itemsRouter = require("./routes/items");
 const errorMiddleware = require("./middleware/error.middleware");
 const { UPLOAD_DIR } = require("./middleware/upload");
 
@@ -35,6 +36,7 @@ app.use("/api/products", productsRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/uploads", uploadsRouter);
 app.use("/api/loans", loanRouter);
+app.use("/api/items", itemsRouter);
 
 app.get("/", (req, res) => {
   res.json({ message: "MERN Shopping Cart API is running" });
